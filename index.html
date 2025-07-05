@@ -11,11 +11,13 @@
       margin: 0;
       scroll-behavior: smooth;
     }
+
     header, footer {
       background: #1e1e1e;
       padding: 1rem;
       text-align: center;
     }
+
     nav {
       display: flex;
       justify-content: center;
@@ -23,49 +25,84 @@
       gap: 1.5em;
       margin-top: 0.5rem;
     }
+
     nav a {
       color: #1abc9c;
       text-decoration: none;
       font-weight: bold;
       font-size: 18px;
-      display: inline-block;
     }
+
     nav a:hover {
       color: #00ffd5;
     }
+
     section {
       padding: 2rem;
     }
-    .btn {
-      background: #1abc9c;
-      color: black;
-      padding: 0.5rem 1.5rem;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 1rem;
+
+    h2 {
+      color: #1abc9c;
+      margin-bottom: 1rem;
     }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    li {
+      margin-bottom: 1.5em;
+    }
+
+    .project-card:hover {
+      background-color: #1a1a1a;
+      border-left: 4px solid #1abc9c;
+      transition: 0.3s ease;
+      padding-left: 1rem;
+    }
+
     .resume-img {
-      max-width: 100%;
+      max-width: 300px;
       height: auto;
       border-radius: 10px;
       border: 2px solid #1abc9c;
       margin-top: 1rem;
     }
-    h2 {
-      color: #1abc9c;
-      margin-bottom: 1rem;
+
+    .social-link {
+      display: inline-block;
+      background-color: #1abc9c;
+      color: black;
+      padding: 0.5rem 1rem;
+      margin-top: 0.5rem;
+      border-radius: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-right: 1rem;
     }
-    ul {
-      padding-left: 1.2em;
+
+    .social-link:hover {
+      background-color: #00ffd5;
     }
-    li {
-      margin-bottom: 1.5em; /* Added spacing between list items */
+
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #1abc9c;
+      color: black;
+      padding: 0.7rem 1rem;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 20px;
+      display: none;
+      z-index: 999;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Swaroop R. Shetty</h1>
     <nav>
@@ -86,6 +123,14 @@
   <section id="about">
     <h2>About Me</h2>
     <p>I am Swaroop R. Shetty, a passionate Fullstack Developer from Sirsi, Uttara Kannada. I graduated with a Bachelor of Engineering in Electronics and Communication from KLSVDIT Haliyal. My journey in tech started with a curiosity for how websites work and grew into a career where I build intuitive and powerful web solutions.</p>
+    
+    <h3>Resume Preview</h3>
+    <a href="https://www.dropbox.com/scl/fi/sm3uqqir1x8fs7ecbzk7z/Swaroop_resume_review-Reg21-1-2.pdf?rlkey=3cw9htyynm1fbkbtmctpn5xd8&raw=1" target="_blank">
+      <img src="https://www.dropbox.com/scl/fi/sm3uqqir1x8fs7ecbzk7z/Swaroop_resume_review-Reg21-1-2.pdf?rlkey=3cw9htyynm1fbkbtmctpn5xd8&raw=1" alt="Swaroop Resume" class="resume-img">
+    </a>
+    <br>
+    <a class="social-link" href="https://www.dropbox.com/scl/fi/sm3uqqir1x8fs7ecbzk7z/Swaroop_resume_review-Reg21-1-2.pdf?rlkey=3cw9htyynm1fbkbtmctpn5xd8&raw=1" target="_blank">📄 View My Resume (PDF)</a>
+
     <h3>Skills</h3>
     <ul>
       <li>Website Design (ui/ux) and front end development.</li>
@@ -98,11 +143,11 @@
   <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li><strong>Detection of Phishing Websites Using Machine Learning</strong><br>
-        Developed using JavaScript, Python, and MySQL. This project aims to identify phishing websites by analyzing site features and applying classification algorithms to enhance online security.
+      <li class="project-card">💻 <strong>Detection of Phishing Websites Using Machine Learning</strong><br>
+        Developed using JavaScript, Python, and MySQL. This project identifies phishing websites by analyzing features and applying classification algorithms.<br><br>
       </li>
-      <li><strong>7-Channel Radio Transceiver System</strong><br>
-        Designed and implemented a 7-channel radio transceiver system capable of simultaneous transmission and reception across multiple frequencies. The system uses RF modules and microcontrollers for efficient channel switching and data communication.
+      <li class="project-card">📡 <strong>7-Channel Radio Transceiver System</strong><br>
+        Designed and implemented a 7-channel system using RF modules and microcontrollers for seamless multi-frequency communication.<br><br>
       </li>
     </ul>
   </section>
@@ -110,17 +155,17 @@
   <section id="experience">
     <h2>Experience & Education</h2>
     <ul>
-      <li><strong>Rooman Technologies</strong> — Data Quality Analyst (Nov 2024 – Present)<br>
-        Responsible for ensuring clean, accurate, and reliable data for AI training datasets. Tasks included normalization, validation, and categorization of data sets while adhering to privacy standards.
+      <li>💼 <strong>Rooman Technologies</strong> — Data Quality Analyst (Nov 2024 – Present)<br>
+        Ensured clean, accurate, and reliable AI training datasets. Tasks: normalization, validation, categorization.<br><br>
       </li>
-      <li><strong>NASD Dandeli</strong> — Web Programming & Computer Hardware (Oct 2023)<br>
-        Gained practical knowledge in basic web technologies and computer hardware maintenance. Achieved Grade A in Web Programming and A+ in Hardware.
+      <li>🖥️ <strong>NASD Dandeli</strong> — Web Programming & Computer Hardware (Oct 2023)<br>
+        Learned basics of web development and hardware maintenance. Grade A (Web), A+ (Hardware).<br><br>
       </li>
-      <li><strong>KLS VDIT, Haliyal</strong> — B.E. in Electronics and Communication (2021 – 2025)<br>
-        Academic focus on communication systems, VLSI, embedded systems, and programming fundamentals.
+      <li>🎓 <strong>KLS VDIT, Haliyal</strong> — B.E. in Electronics and Communication (2021 – 2025)<br>
+        Focus: VLSI, Embedded Systems, Programming, Communication Systems.<br><br>
       </li>
-      <li><strong>Shree Marikamba PU College, Sirsi</strong> — PCME (2019 – 2021)<br>
-        Secured 79% with emphasis on Physics, Chemistry, Mathematics, and Electronics.
+      <li>🏫 <strong>Shree Marikamba PU College, Sirsi</strong> — PCME (2019 – 2021)<br>
+        Scored 79% with focus on PCM and Electronics.<br><br>
       </li>
     </ul>
   </section>
@@ -139,9 +184,25 @@
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:swaroopshetty5340@gmail.com">swaroopshetty5340@gmail.com</a></p>
     <p>Phone: +91-8147715340</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/swaroop-shetty-80a117229" target="_blank">linkedin.com/in/swaroop-shetty</a></p>
+    <p>
+      <a class="social-link" href="https://www.linkedin.com/in/swaroop-shetty-80a117229" target="_blank">🔗 LinkedIn</a>
+      <a class="social-link" href="https://dribbble.com/SwaroopShetty" target="_blank">🎨 Dribbble</a>
+    </p>
   </section>
 
   <footer></footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <script>
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = function () {
+      scrollTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    };
+    scrollTopBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
 </body>
 </html>
